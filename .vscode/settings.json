@@ -4,15 +4,18 @@
         "autoload",
         "Boggiano",
         "classmap",
+        "Cualquiera",
         "desde",
         "hhvm",
         "Jordi",
         "mundo",
         "nikic",
+        "Otro",
         "phpdbg",
         "phpunit",
         "piramide",
         "Popov",
-        "pruebas"
+        "pruebas",
+        "texto"
     ]
 }
