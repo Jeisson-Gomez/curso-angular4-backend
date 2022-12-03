@@ -43,7 +43,25 @@ $app->post('/productos', function() use($app, $db){
             "'{$data['imagen']}'".
             ")";
     
-    var_dump($query);
+    $insert = $db->query($query);
+
+    if($insert){
+        $result = array(
+            'status'    => 'error',
+            'code'      => '404',
+            'message'   => 'Producto No se ha creado'
+        );
+    }
+
+    if($insert){
+        $result = array(
+            'status'    => 'success',
+            'code'      => '200',
+            'message'   => 'Producto creado correctamente'
+        );
+    }
+
+    echo json_decode($result);
 });
 
 $app-> run();
